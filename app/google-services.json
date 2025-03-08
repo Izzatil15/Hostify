@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "206567412143",
+    "project_id": "hostify1-6a779",
+    "storage_bucket": "hostify1-6a779.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206567412143:android:dc9e0b9e53072370bfdf5a",
+        "android_client_info": {
+          "package_name": "com.example.hostify1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg6INP2Xr2GamYBEXYiIZN8KbvxcaFUOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

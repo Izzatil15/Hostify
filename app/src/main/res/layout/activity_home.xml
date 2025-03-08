@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="@android:color/white">
+
+    <!-- Foto Profil (Opsional) -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:contentDescription="Foto Profil"
+        android:clipToOutline="true" />
+
+    <!-- Nama Pengguna -->
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengguna"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Email Pengguna -->
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Masuk -->
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tombol Daftar Akun -->
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Akun"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+
+    <!-- Tombol Logout (Default: Tersembunyi) -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

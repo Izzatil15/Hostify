@@ -24,16 +24,16 @@ public class detail extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        ImageView backButton = findViewById(R.id.backButton);
-        // Listener untuk btnCariProperty
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(detail.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+//
+//        ImageView backButton = findViewById(R.id.wa);
+//        // Listener untuk btnCariProperty
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(detail.this, MainActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 }

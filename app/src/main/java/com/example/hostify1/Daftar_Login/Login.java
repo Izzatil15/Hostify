@@ -14,8 +14,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
-import com.example.hostify1.Admin.Home;
 import com.example.hostify1.Admin.MainActivity;
 import com.example.hostify1.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +24,7 @@ public class Login extends AppCompatActivity {
     private EditText editTextEmail, editTextPassword;
     private Button buttonLogin;
     private FirebaseAuth mAuth;
+    private TextView textViewLupaPassword; // Tambahan
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,13 +47,7 @@ public class Login extends AppCompatActivity {
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
         TextView textViewDaftar = findViewById(R.id.textViewDaftar);
-
-        // Cek apakah pengguna sudah login
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        if (currentUser != null && currentUser.isEmailVerified()) {
-//            startActivity(new Intent(Login.this, Home.class));
-//            finish();
-//        }
+        textViewLupaPassword = findViewById(R.id.textViewForgotPassword); // Tambahan
 
         // Listener untuk tombol login
         buttonLogin.setOnClickListener(v -> loginUser());
@@ -64,6 +57,9 @@ public class Login extends AppCompatActivity {
             Intent intent = new Intent(Login.this, com.example.hostify1.Daftar_Login.Daftar.class);
             startActivity(intent);
         });
+
+        // Listener untuk lupa password
+        textViewLupaPassword.setOnClickListener(v -> resetPassword());
     }
 
     private void loginUser() {
@@ -94,6 +90,24 @@ public class Login extends AppCompatActivity {
                         }
                     } else {
                         Toast.makeText(Login.this, "Login gagal: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
+    }
+
+    private void resetPassword() {
+        String email = editTextEmail.getText().toString().trim();
+
+        if (TextUtils.isEmpty(email)) {
+            Toast.makeText(Login.this, "Masukkan email terlebih dahulu!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        mAuth.sendPasswordResetEmail(email)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(Login.this, "Cek email untuk reset password.", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(Login.this, "Gagal mengirim email reset: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
     }

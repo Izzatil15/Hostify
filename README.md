@@ -24,8 +24,7 @@
 ## Fitur Hostify  
 - ✅ Pencarian properti
 - ✅ Detail lengkap properti dengan foto dan spesifikasi  
-- ✅ Komunikasi langsung dengan pemilik properti  
-- ✅ Rekomendasi properti sesuai preferensi pengguna  
+- ✅ Komunikasi langsung dengan pemilik properti
 - ✅ Sistem verifikasi untuk keamanan transaksi  
 
 Hostify membantu pengguna menemukan properti impian mereka dengan cepat dan efisien.  

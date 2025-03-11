@@ -1,20 +1,30 @@
-# UTS | Mobile Apps 
+# UTS | Mobile Apps  
 
-**Hostify** adalah aplikasi mobile yang menghubungkan pencari properti dengan pemiliknya. Dengan fitur pencarian, detail properti lengkap, dan komunikasi langsung, Hostify mempermudah interaksi dan mempercepat transaksi tanpa perantara tambahan.
+**Hostify** adalah aplikasi mobile yang menghubungkan pencari properti dengan pemiliknya. Dengan fitur pencarian, detail properti lengkap, dan komunikasi langsung, Hostify mempermudah interaksi dan mempercepat transaksi tanpa perantara tambahan.  
 
-## Tampilan Aplikasi
+## Tampilan Aplikasi  
 
-### Halaman Awal
-![Tampilan Awal](https://i.ibb.co/N2DyDD6/starup.jpg)
-![Tampilan Daftar](https://i.ibb.co/8Db0KWy/daftar.jpg)
-![Tampilan Login](https://i.ibb.co/mVgQRLn/login.jpg)
+<div align="center">  
+  <table>  
+    <tr>  
+      <td><img src="https://i.ibb.co/N2DyDD6/starup.jpg" width="200"></td>  
+      <td><img src="https://i.ibb.co/8Db0KWy/daftar.jpg" width="200"></td>  
+      <td><img src="https://i.ibb.co/mVgQRLn/login.jpg" width="200"></td>  
+    </tr>  
+    <tr>  
+      <td><img src="https://i.ibb.co/4ZThSr8/home.jpg" width="200"></td>  
+      <td><img src="https://i.ibb.co/yKDh12P/search.jpg" width="200"></td>  
+      <td><img src="https://i.ibb.co/CpzSQV0/wishlist.jpg" width="200"></td>  
+    </tr>  
+    <tr>  
+      <td><img src="https://i.ibb.co/XYZ1234/example1.jpg" width="200"></td>  
+      <td><img src="https://i.ibb.co/XYZ5678/example2.jpg" width="200"></td>  
+      <td><img src="https://i.ibb.co/XYZ9101/example3.jpg" width="200"></td>  
+    </tr>  
+  </table>  
+</div>  
 
-### Fitur Utama
-![Tampilan Home](https://i.ibb.co/4ZThSr8/home.jpg)
-![Tampilan Search](https://i.ibb.co/yKDh12P/search.jpg)
-![Tampilan Wishlist](https://i.ibb.co/CpzSQV0/wishlist.jpg)
-
-## Fitur Hostify
+## Fitur Hostify  
 ✅ Pencarian properti berdasarkan lokasi dan harga  
 ✅ Detail lengkap properti dengan foto dan spesifikasi  
 ✅ Komunikasi langsung dengan pemilik properti  

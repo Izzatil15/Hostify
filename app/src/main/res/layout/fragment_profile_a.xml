@@ -83,10 +83,12 @@
             android:text="Logout"
             android:visibility="gone"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:cornerRadius="50dp"
             android:layout_marginTop="20dp"
+            app:cornerRadius="50dp"
             app:strokeColor="@color/red"
-            android:textColor="@color/red"/>
+            app:backgroundTint="@color/red"
+            android:textColor="@android:color/white"/>
+
 
     </LinearLayout>
 

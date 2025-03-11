@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -101,23 +102,41 @@ public class Daftar extends AppCompatActivity {
                                             user.sendEmailVerification()
                                                     .addOnCompleteListener(verifyTask -> {
                                                         if (verifyTask.isSuccessful()) {
-                                                            Toast.makeText(Daftar.this, "Pendaftaran berhasil! Verifikasi email Anda.", Toast.LENGTH_LONG).show();
-                                                            // Arahkan pengguna ke halaman login
+                                                            showCustomToast("Pendaftaran berhasil! Verifikasi email Anda.", true);
                                                             Intent intent = new Intent(Daftar.this, Login.class);
                                                             startActivity(intent);
                                                             finish();
                                                         } else {
-                                                            Toast.makeText(Daftar.this, "Gagal mengirim email verifikasi.", Toast.LENGTH_SHORT).show();
+                                                            showCustomToast("Gagal mengirim email verifikasi", false);
                                                         }
                                                     });
                                         } else {
-                                            Toast.makeText(Daftar.this, "Gagal menyimpan nama pengguna.", Toast.LENGTH_SHORT).show();
+                                            showCustomToast("Gagal menyimpan nama pengguna", false);
                                         }
                                     });
                         }
                     } else {
-                        Toast.makeText(Daftar.this, "Pendaftaran gagal: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        showCustomToast("Pendaftaran gagal: " + task.getException().getMessage(), false);
                     }
                 });
+    }
+
+    private void showCustomToast(String message, boolean isSuccess) {
+        Toast toast = new Toast(getApplicationContext());
+        LayoutInflater inflater = getLayoutInflater();
+
+        View layout;
+        if (isSuccess) {
+            layout = inflater.inflate(R.layout.custom_toast_success, null);
+        } else {
+            layout = inflater.inflate(R.layout.custom_toast_error, null);
+        }
+
+        TextView text = layout.findViewById(R.id.toastMessage);
+        text.setText(message);
+
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
     }
 }

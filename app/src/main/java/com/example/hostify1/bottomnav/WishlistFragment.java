@@ -1,5 +1,6 @@
 package com.example.hostify1.bottomnav;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,8 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.hostify1.R;
+import com.example.hostify1.detail;
 
 public class WishlistFragment extends Fragment {
 
@@ -87,6 +90,35 @@ public class WishlistFragment extends Fragment {
         favoriteIcon8.setOnClickListener(v -> toggleFavorite(favoriteIcon8, card8));
         favoriteIcon9.setOnClickListener(v -> toggleFavorite(favoriteIcon9, card9));
         favoriteIcon10.setOnClickListener(v -> toggleFavorite(favoriteIcon10, card10));
+
+        // card ke detail
+        int[] textViewIds = {
+                // rekomendasi
+                R.id.lebihDetail1,
+                R.id.lebihDetail2,
+                R.id.lebihDetail3,
+                R.id.lebihDetail4,
+                R.id.lebihDetail5,
+                R.id.lebihDetail6,
+                R.id.lebihDetail7,
+                R.id.lebihDetail8,
+                R.id.lebihDetail9,
+                R.id.lebihDetail10,
+        };
+
+        for (int id : textViewIds) {
+            TextView textView = view.findViewById(id);
+            if (textView != null) {
+                textView.setOnClickListener(v -> openDetailActivity());
+            }
+        }
+
+//        private void openDetailActivity() {
+//            Intent intent = new Intent(getActivity(), detail.class);
+//            intent.putExtra("source", "wishlist"); // Menandai asal halaman Wishlist
+//            startActivity(intent);
+//        }
+
     }
 
     private void toggleFavorite(ImageView imageView, androidx.cardview.widget.CardView cardView) {
@@ -95,4 +127,12 @@ public class WishlistFragment extends Fragment {
             cardView.setVisibility(View.GONE); // Sembunyikan CardView
         }
     }
+
+    // card ke detail
+    // 🔹 Method untuk membuka DetailActivity
+    private void openDetailActivity() {
+        Intent intent = new Intent(getActivity(), detail.class);
+        startActivity(intent);
+    }
+
 }

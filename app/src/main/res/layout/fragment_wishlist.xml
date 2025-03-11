@@ -45,7 +45,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/virgia" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -59,7 +59,7 @@
                                 android:id="@+id/property_name1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="Virginia Park Makassar"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -69,7 +69,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 500.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -137,7 +137,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/sutera" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -151,7 +151,7 @@
                                 android:id="@+id/property_name2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="Suvarna Sutera"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -161,7 +161,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 900.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -229,7 +229,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/citraland" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -243,7 +243,7 @@
                                 android:id="@+id/property_name3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="CitraLand Tallasa City"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -253,7 +253,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 1.000.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -321,7 +321,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/safari" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -335,7 +335,7 @@
                                 android:id="@+id/property_name4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="Safari Residence"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -345,8 +345,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
-                                android:textColor="#AA141111"
+                                android:text="Rp 271T"
+                                android:textColor="@color/black"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -413,7 +413,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/themutiara" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -427,7 +427,7 @@
                                 android:id="@+id/property_name5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="The Mutiara Lagoon"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -437,7 +437,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 1.500.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -505,7 +505,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/sudirman" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -519,7 +519,7 @@
                                 android:id="@+id/property_name6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="31 Sudirman Suites"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -529,7 +529,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 2.000.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -544,7 +544,7 @@
 
                             <!-- Ikon Favorit di atas Tombol -->
 
-                            <!-- Tombol Lihat Detail -->
+
                             <ImageView
                                 android:id="@+id/favorite_icon6"
                                 android:layout_width="24dp"
@@ -554,6 +554,7 @@
                                 android:layout_marginBottom="25dp"
                                 android:src="@drawable/love" />
 
+                            <!-- Tombol Lihat Detail -->
                             <Button
                                 android:id="@+id/lebihDetail6"
                                 android:layout_width="70dp"
@@ -597,7 +598,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/dataranhijau" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -611,7 +612,7 @@
                                 android:id="@+id/property_name7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="Dataran Hijau"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -621,7 +622,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 999.999.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -689,7 +690,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/puri" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -703,7 +704,7 @@
                                 android:id="@+id/property_name8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="Puri Mutiara"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -713,7 +714,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 2.300.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -781,7 +782,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/casa" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -795,7 +796,7 @@
                                 android:id="@+id/property_name9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Citra Land Estate"
+                                android:text="Casa De Parco"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -805,7 +806,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 5.000.000.000"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
@@ -873,7 +874,7 @@
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image15" />
+                            android:src="@drawable/image1" />
 
                         <!-- Layout untuk Nama Properti dan Harga -->
                         <LinearLayout
@@ -897,7 +898,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Rp.000000"
+                                android:text="Rp 999.999.999"
                                 android:textColor="#AA141111"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />

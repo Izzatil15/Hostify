@@ -53,17 +53,20 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+
+    // card ke detail
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // 🔹 List semua ID TextView yang ingin diberi event listener
+        // card ke detail
         int[] textViewIds = {
+                // rekomendasi
                 R.id.lebihlanjut1, R.id.lebihlanjut2, R.id.lebihlanjut3,
+                //populer
                 R.id.lebihdetail1, R.id.lebihdetail2, R.id.lebihdetail3
         };
 
-        // 🔹 Tambahkan event listener secara otomatis dengan loop
         for (int id : textViewIds) {
             TextView textView = view.findViewById(id);
             if (textView != null) {
@@ -79,9 +82,9 @@ public class HomeFragment extends Fragment {
         dot3.setAlpha(displayedChild == 2 ? 1.0f : 0.5f);
     }
 
-    // 🔹 Method untuk membuka DetailActivity
     private void openDetailActivity() {
         Intent intent = new Intent(getActivity(), detail.class);
+        intent.putExtra("source", "home"); // Menandai asal halaman Home
         startActivity(intent);
     }
 

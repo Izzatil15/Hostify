@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFEFEF"
+    android:background="#FFFFFF"
     android:id="@+id/main"
     tools:context=".MainActivity">
 
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image1"
+                android:src="@drawable/iklan1"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image4"
+                android:src="@drawable/iklan2"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image5"
+                android:src="@drawable/iklan3"
                 tools:ignore="MissingConstraints" />
         </ViewFlipper>
 

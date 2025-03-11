@@ -3,6 +3,8 @@ package com.example.hostify1.Daftar_Login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -81,15 +83,15 @@ public class Login extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null && user.isEmailVerified()) {
-                            Toast.makeText(Login.this, "Login berhasil!", Toast.LENGTH_SHORT).show();
+                            showCustomToast("Login berhasil!", true);  // Untuk sukses
                             Intent intent = new Intent(Login.this, MainActivity.class);
                             startActivity(intent);
                             finish();
                         } else {
-                            Toast.makeText(Login.this, "Verifikasi email terlebih dahulu.", Toast.LENGTH_LONG).show();
+                            showCustomToast("Verifikasi email terlebih dahulu!", false);
                         }
                     } else {
-                        Toast.makeText(Login.this, "Login gagal: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        showCustomToast("Email atau Password tidak valid", false);
                     }
                 });
     }
@@ -98,17 +100,37 @@ public class Login extends AppCompatActivity {
         String email = editTextEmail.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(Login.this, "Masukkan email terlebih dahulu!", Toast.LENGTH_SHORT).show();
+            showCustomToast("Masukan email terlebih dahulu", false);
             return;
         }
 
         mAuth.sendPasswordResetEmail(email)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        Toast.makeText(Login.this, "Cek email untuk reset password.", Toast.LENGTH_LONG).show();
+                        showCustomToast("Cek email untuk reset password!", true);  // Untuk sukses
                     } else {
-                        Toast.makeText(Login.this, "Gagal mengirim email reset: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        showCustomToast("Gagal mengirim email reset", false);
                     }
                 });
     }
+
+    private void showCustomToast(String message, boolean isSuccess) {
+        Toast toast = new Toast(getApplicationContext());
+        LayoutInflater inflater = getLayoutInflater();
+
+        View layout;
+        if (isSuccess) {
+            layout = inflater.inflate(R.layout.custom_toast_success, null);
+        } else {
+            layout = inflater.inflate(R.layout.custom_toast_error, null);
+        }
+
+        TextView text = layout.findViewById(R.id.toastMessage);
+        text.setText(message);
+
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }
+
 }

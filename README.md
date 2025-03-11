@@ -20,7 +20,7 @@
 </div>  
 
 ## Fitur Hostify  
-✅ Pencarian properti berdasarkan lokasi dan harga  
+✅ Pencarian properti
 ✅ Detail lengkap properti dengan foto dan spesifikasi  
 ✅ Komunikasi langsung dengan pemilik properti  
 ✅ Rekomendasi properti sesuai preferensi pengguna  

@@ -2,6 +2,8 @@
 
 **Hostify** adalah aplikasi mobile yang menghubungkan pencari properti dengan pemiliknya. Dengan fitur pencarian, detail properti lengkap, dan komunikasi langsung, Hostify mempermudah interaksi dan mempercepat transaksi tanpa perantara tambahan.  
 
+🚧 **Proyek masih dalam tahap pengembangan (Under Development)** 🚧  
+
 ## Tampilan Aplikasi  
 
 <div align="center">  
@@ -20,10 +22,12 @@
 </div>  
 
 ## Fitur Hostify  
-✅ Pencarian properti
-✅ Detail lengkap properti dengan foto dan spesifikasi  
-✅ Komunikasi langsung dengan pemilik properti  
-✅ Rekomendasi properti sesuai preferensi pengguna  
-✅ Sistem verifikasi untuk keamanan transaksi  
+- ✅ Pencarian properti berdasarkan lokasi dan harga  
+- ✅ Detail lengkap properti dengan foto dan spesifikasi  
+- ✅ Komunikasi langsung dengan pemilik properti  
+- ✅ Rekomendasi properti sesuai preferensi pengguna  
+- ✅ Sistem verifikasi untuk keamanan transaksi  
 
 Hostify membantu pengguna menemukan properti impian mereka dengan cepat dan efisien.  
+
+📌 **Catatan:** Fitur-fitur masih dalam pengembangan dan akan terus diperbarui! 🚀  

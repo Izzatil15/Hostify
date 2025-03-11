@@ -16,11 +16,6 @@
       <td><img src="https://i.ibb.co/yKDh12P/search.jpg" width="200"></td>  
       <td><img src="https://i.ibb.co/CpzSQV0V/wishlist.jpg" width="200"></td>  
     </tr>  
-    <tr>  
-      <td><img src="https://i.ibb.co/XYZ1234/image1.jpg" width="200"></td>  
-      <td><img src="https://i.ibb.co/XYZ5678/image2.jpg" width="200"></td>  
-      <td><img src="https://i.ibb.co/XYZ9101/image3.jpg" width="200"></td>  
-    </tr>  
   </table>  
 </div>  
 

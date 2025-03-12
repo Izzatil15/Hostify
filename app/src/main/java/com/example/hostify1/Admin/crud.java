@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hostify1.Admin.MainActivity;
@@ -22,7 +24,15 @@ public class crud extends AppCompatActivity {
         // Tombol untuk menambah data
         MaterialButton btnTambah = findViewById(R.id.btnCariProperty);
         btnTambah.setOnClickListener(v -> showSuccessDialog());
+
+        // Tombol kembali
+        ImageView fabBack = findViewById(R.id.backButton);
+        fabBack.setOnClickListener(v -> {
+            finish(); // Kembali ke halaman sebelumnya
+        });
     }
+
+
 
     private void showSuccessDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -47,4 +57,7 @@ public class crud extends AppCompatActivity {
         dialog.getButton(DialogInterface.BUTTON_POSITIVE).setTextColor(getResources().getColor(android.R.color.black));
 
     }
+
+
+
 }

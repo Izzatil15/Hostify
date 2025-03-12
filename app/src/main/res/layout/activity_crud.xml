@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
     android:id="@+id/crud"
     tools:context=".Admin.crud">
 
@@ -45,7 +46,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="55dp"/>
 
             <ImageView
                 android:id="@+id/ivPreview"
@@ -312,10 +313,7 @@
                 android:textStyle="bold"
                 app:cornerRadius="100dp"
                 app:backgroundTint="@color/yellow" />
-
-
         </LinearLayout>
-
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
